@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindspark Data - Soluções Tecnológicas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1E3A8A;
+            color: #fff;
+        }
+
+        header {
+            background: #0C2D91;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.5em;
+            font-weight: lighter;
+        }
+
+        nav {
+            background: #0D3C91;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .about, .services, .projects, .contact {
+            margin-bottom: 60px;
+        }
+
+        .about p, .services ul, .projects .gallery, .contact p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .about p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .services ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .services li {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+
+        .services li strong {
+            font-weight: bold;
+        }
+
+        .projects .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .projects .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact input, .contact textarea {
+            padding: 15px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 8px;
+            margin-top: 5px;
+        }
+
+        .contact button {
+            padding: 15px;
+            background: #0C2D91;
+            color: white;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background: #0D3C91;
+        }
+
+        footer {
+            background: #0C2D91;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1.2em;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mindspark Data</h1>
+    <p>Transformando dados em soluções inovadoras para o seu negócio</p>
+</header>
+
+<nav>
+    <a href="#about">Sobre Nós</a>
+    <a href="#services">Serviços</a>
+    <a href="#projects">Projetos</a>
+    <a href="#contact">Contato</a>
+</nav>
+
+<section id="about" class="about">
+    <h2>Sobre Nós</h2>
+    <p>A Mindspark Data é uma empresa de tecnologia especializada em soluções de dados e inteligência artificial. Com uma equipe altamente qualificada, estamos prontos para transformar o potencial dos dados em uma vantagem estratégica para o seu negócio.</p>
+</section>
+
+<section id="services" class="services">
+    <h2>Nossos Serviços</h2>
+    <ul>
+        <li><strong>Consultoria em Big Data:</strong> Analisamos grandes volumes de dados para fornecer insights acionáveis e melhorar a performance do seu negócio.</li>
+        <li><strong>Desenvolvimento de Software Personalizado:</strong> Criamos soluções tecnológicas sob medida para resolver os desafios específicos da sua empresa.</li>
+        <li><strong>Integração de Sistemas:</strong> Garantimos a integração perfeita entre diferentes plataformas e sistemas dentro da sua organização.</li>
+        <li><strong>Inteligência Artificial & Machine Learning:</strong> Desenvolvemos modelos de IA e ML para otimizar processos, prever resultados e proporcionar um desempenho superior.</li>
+    </ul>
+</section>
+
+<section id="projects" class="projects">
+    <h2>Projetos Realizados</h2>
+    <div class="gallery">
+        <img src="https://via.placeholder.com/500x300/007BFF/ffffff?text=Projeto+1" alt="Projeto 1">
+        <img src="https://via.placeholder.com/500x300/007BFF/ffffff?text=Projeto+2" alt="Projeto 2">
+        <img src="https://via.placeholder.com/500x300/007BFF/ffffff?text=Projeto+3" alt="Projeto 3">
+        <img src="https://via.placeholder.com/500x300/007BFF/ffffff?text=Projeto+4" alt="Projeto 4">
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contato</h2>
+    <p>Entre em contato conosco para mais informações ou para discutir como podemos ajudá-lo a alavancar o seu negócio com soluções de dados e tecnologia.</p>
+    <form action="mailto:contato@mindsparkdata.com.br" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <textarea name="message" placeholder="Sua mensagem" rows="6" required></textarea>
+        <button type="submit">Enviar Mensagem</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Mindspark Data | <a href="mailto:contato@mindsparkdata.com.br">contato@mindsparkdata.com.br</a></p>
+</footer>
+
+</body>
+</html>
